@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.youth.banner.Banner
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/home_banner"
+        app:image_scale_type="center_inside"
+        app:indicator_height="8dp"
+        app:indicator_margin="5dp"
+        app:indicator_width="8dp"/>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/home_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
